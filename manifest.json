@@ -1,0 +1,25 @@
+{
+  "name": "Tool",
+  "description": "Tool",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "img/activeIcon.png",
+    "default_title": "Tool Tool",
+    "default_popup": "./html/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "js/constants/index.js",
+      "js/utils/index.js",
+      "js/background/index.js"
+    ],
+    "persistent": false
+  },
+  "permissions": ["cookies", "background", "http://localhost/*"],
+  "icons": {
+    "16": "img/activeIcon.png",
+    "48": "img/activeIcon.png",
+    "128": "img/activeIcon.png"
+  }
+}

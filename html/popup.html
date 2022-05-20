@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+  <link rel="stylesheet" type="text/css" href="../css/loading.css" />
+  <title>Tool Tool</title>
+</head>
+
+<body>
+  <div id="food-container">
+    <p class="forbidden-popup">Sorry, the service does not support this page</p>
+    <div class="main-popup">
+      <header>
+        <div>Tool Tool</div>
+        <div>
+          <button class="glyphicon glyphicon-refresh button-refresh" aria-hidden="true" title="Refresh List" />
+          <button class="glyphicon glyphicon-trash button-clean-all" aria-hidden="true" title='Clean All' />
+        </div>
+      </header>
+      <div class="popup-container">
+        <div class="pop-header">
+          <div class="input-group searcher-container">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle group-button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" title="Change Group">
+                <div>To C Group</div><span class="glyphicon glyphicon-menu-down"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-left group-menu" />
+            </div>
+            <input type="text" class="input-search" aria-label="..." placeholder="Filter Tool Target" />
+          </div>
+        </div>
+        <div>
+          <ul class="Tool-container" />
+        </div>
+      </div>
+      <footer>
+        <button class="submit-button">
+          Save And Refresh
+        </button>
+      </footer>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="../js/utils/optimization.js"></script>
+  <script src="../js/utils/jquery-3.1.0.min.js"></script>
+  <script src="../bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="../js/constants/index.js"></script>
+  <script src="../js/utils/index.js"></script>
+  <script src="../js/popup/index.js"></script>
+</body>
+
+</html>
